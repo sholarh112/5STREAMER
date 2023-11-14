@@ -87,7 +87,7 @@ header .low_header{
     z-index: 1;
 }
 
-header .low_header .logo{
+header .low_header .logo, .logo{
     font-size: 3.5rem;
     color: #fff;
     font-weight: bolder;
@@ -110,6 +110,10 @@ header .low_header nav ul li a{
 
 header .low_header nav ul li a:hover{
     color: #F53B00;
+}
+
+.mobile {
+    display: none;
 }
 
 header .low_header #menu_bar{
@@ -441,20 +445,28 @@ header .low_header .register_form_container.active{
 .home .home_content .socials .icons{
     display: flex;
     align-items: center;
+    gap: 1rem;
 }
 
 .home .home_content .socials .icons i{
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 4rem;
     height: 4rem;
     line-height: 4rem;
     margin-right: .5rem;
     text-align: center;
-    border-radius: .20rem;
+    border-radius: 50%;
     border: 2px solid gray;
     margin-right: .8rem;
+    cursor: pointer;
+    color: gray;
 }
 
+.home .home_content .socials .icons i:hover{
+    border: 2px solid #fff;
+    transition: all;
+    color: #fff;
+}
 /********************* BROADCAST SECTION ********************/
 .broadcast{
     background-color: #0D131A;
@@ -807,7 +819,7 @@ header .low_header .register_form_container.active{
         font-size: 55%;
     }
     header .low_header{
-        padding: 1.5rem 1rem;
+        padding: 1.5rem 7rem;
     }
 }
 
@@ -948,6 +960,17 @@ header .low_header .register_form_container.active{
     .footer .footer_terms .copyright{
         padding-right: 0;
         padding-top: 2rem;
+    }
+
+    .mobile {
+        display: block;
+        margin: 0 1.5rem 1rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .pc {
+        display: none;
     }
 } 
 

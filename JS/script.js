@@ -2,7 +2,8 @@ let menu_bar = document.querySelector('#menu_bar');
 let navbar = document.querySelector('.navbar');
 let header = document.querySelector('.low_header');
 let sub_menu = document.querySelector('.sub_menu');
-let user_btn = document.querySelector('#user_btn');
+let user_btn_pc = document.querySelector('#user_btn_pc');
+let user_btn_mob = document.querySelector('#user_btn_mob');
 let login_form = document.querySelector('.login_form_container');
 let login_close_btn = document.querySelector('#login_close_btn');
 let login_link = document.querySelector('#login_link');
@@ -29,7 +30,15 @@ window.addEventListener('scroll', function() {
 })
 
 
-user_btn.addEventListener('click', () => {
+user_btn_mob.addEventListener('click', () => {
+    // user_btn.classList.toggle('fa-times');
+    sub_menu.classList.toggle('active');
+    menu_bar.classList.remove('fa-times');
+    navbar.classList.remove('active');
+    
+})
+
+user_btn_pc.addEventListener('click', () => {
     // user_btn.classList.toggle('fa-times');
     sub_menu.classList.toggle('active');
     menu_bar.classList.remove('fa-times');
