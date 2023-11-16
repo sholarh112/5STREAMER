@@ -1,6 +1,6 @@
 let track = document.getElementsByClassName("audio");
 let play = document.getElementsByClassName("play_btn")
-console.log(track)
+
 let play_pause_btn = document.querySelector('#play_pause_btn');
 let slider = document.querySelector('#slider');
 let forward_btn = document.querySelector('#forward_btn');
@@ -18,8 +18,7 @@ let track_name = document.querySelector("#track_name");
 let track_artist = document.querySelector("#track_artist");
 
 for (let index = 0; index < play.length; index++) {
-    // for (let index of play) {
-        console.log(play[index]);
+
         play[index].addEventListener('click', function() {
         console.log("click");
 	// s_m_player.style.transform = 'translateY(0px)';
@@ -40,11 +39,6 @@ for (let index = 0; index < play.length; index++) {
 
 	})
 }
-
-// play.forEach((play, index) => {
-//     // console.log(index);
-// 	;
-// });
 
 function pause_song() {
 	track[index_no].pause();
@@ -87,7 +81,7 @@ function update_second() {
 	// function will run when the track is over
 	if (track[index_no].ended) {
 		clearInterval(update_second);
-		wave_animation.style.opacity = '0';
+		// wave_animation.style.opacity = '0';
 		play_pause_btn.innerHTML = '<i class="fa fa-play text-5xl" aria-hidden="true"></i>';
 	}
 }

@@ -41,12 +41,8 @@ body{
 }
 
 ::-webkit-scrollbar{
-    width: 1rem;
+    width: .5rem;
 }
-
-.container::-webkit-scrollbar {
-    width: 0 !important;
-  }
 
 ::-webkit-scrollbar-track{
     background-color: #f7f7f7;
@@ -477,6 +473,8 @@ header .low_header .register_form_container.active{
     width: 100%;
     display: grid;
     grid-template-columns: 55% 50%;
+    margin: 0;
+    padding: 0;
 }
 
 .broadcast .broadcast_img img{
@@ -486,15 +484,16 @@ header .low_header .register_form_container.active{
 }
 
 .broadcast .broadcast_text{
-    margin: 10rem;
+    margin: 5rem;
     /* margin-right: 10rem; */
     padding-right: 5rem;
 }
 
 .broadcast .broadcast_text h3{
-    font-size: 3.9rem;
+    font-size: 2.5rem;
     font-weight: bolder;
     line-height: 1.5;
+    padding-top: 4rem;
 }
 
 .broadcast .broadcast_text p{
@@ -869,7 +868,7 @@ header .low_header .register_form_container.active{
 
 @media screen and (max-width: 967px){
     .broadcast .broadcast_text{
-        margin: 7rem 8rem;
+        margin: 7rem 5rem;
     }
     .connect .connect_text .box_container{
         padding: 0 3%;
@@ -889,23 +888,17 @@ header .low_header .register_form_container.active{
     }
     .home .home_content p{
         width: 85%;
-        /* height: auto; */
-    /* }
+        /* height: auto;
+    } */
+    }
     .broadcast .broadcast_img{
-        /* display: none; */
-    } 
-    /* .broadcast{
-        grid-template-columns: 0 1fr;
+        display: none;
     }
-    .broadcast .broadcast_text{
-        width: 100%;
-        padding-right: 0;
-        margin-right: 0;
+
+     .broadcast{
+        display: inline-block;
     }
-    .broadcast .broadcast_text h3{
-        /* width: 100%; */
-        /* padding: 5rem 0; */
-    /* }  */
+
     .cta_content{
         padding: 0 2.5%;
         width: 80%;
