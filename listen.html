@@ -13,11 +13,6 @@
     <link rel="stylesheet" href="./CSS/style.css" />
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script src="./JS/tailwind-3.3.5.js"></script>
-    <style>
-      .artist_container::-webkit-scrollbar {
-        display: none;
-      }
-    </style>
 
     <!-- font awesome cdn link  -->
     <link
@@ -26,10 +21,10 @@
     />
     <title>Waystream Home- Create Broadcast</title>
   </head>
-  <body class="bg-[#121212] relative mb-32">
+  <body class="bg-[#121212]">
     <div class="">
       <div
-        class="side lg:w-[24rem] w-[28rem] bg-[#090909] fixed top-0 bottom-0 z-50 lg:left-0 left-[-300px] transition-all duration-1000 shadow h-screen col-span-1"
+        class="side lg:w-[24rem] w-[28rem] bg-[#090909] fixed top-0 bottom-0 lg:left-0 left-[-300px] transition-all duration-1000 shadow h-screen col-span-1"
       >
         <div class="p-2.5 mt-1 flex items-center justify-center">
           <a
@@ -168,136 +163,119 @@
           <form action="#" class="ml-12">
             <input
               type="text"
-              class="p-12 h-20 rounded-lg w-[600px] bg-[#272727] text-white"
+              class="p-12 h-20 rounded-lg max-w-[600px] bg-[#272727] text-white"
               placeholder="Search"
             />
           </form>
-          <a href="#" class="cursor-pointer text-xl hover:text-[#f53b00]"
-            >Sign up</a
-          >
+          <a href="#" class="cursor-pointer text-lg min-w-10">Sign up</a>
           <a href="#" class="register_btn btn mr-20 cursor-pointer">Login</a>
         </div>
 
         <section class="py-10 px-12">
-          <div class="text-left text-3xl text font-extrabold">
-            Recommended albums
-          </div>
+          <div class="text-left text-5xl text font-extrabold">Recommended</div>
           <div
-            class="container flex justify-start items-start gap-x-8 overflow-x-auto"
-            id="album_container"
+            class="container flex justify-start gap-x-6 items-start overflow-x-auto"
           >
-            <!-- <div
-              class="card pb-2 min-w-[16rem] relative rounded-2xl duration-300 shadow-lg hover:shadow-2xl tranform transition-all hover:-translate-y-2"
+            
+          <div
+              class="card pb-2 min-w-[20rem] relative rounded-2xl duration-300 shadow-lg hover:shadow-2xl tranform transition-all hover:-translate-y-2"
             ><a href="#">
               <img
                 src="./IMG/3.jpg"
                 alt="Cover"
-                class="w-60 h-60 mt-8 rounded-2xl"
+                class="w-80 h-80 mt-8 rounded-2xl"
+              />
+              <div class="mt-5 flex flex-row justify-between items-center">
+                <div>
+                <h4><b class="text-3xl uppercase">John Doe</b></h4>
+                <p>Architect & Engineer</p>
+              </div>
+                <svg width="15" height="15" fill="" class="bg-[#f53b00] mr-4 p-8 rounded-full" xmlns="http://www.w3.org/2000/svg" cursor="pointer" style="transform: scale(0.75);"><path d="M8.975 1.03C5.135-1.186.333 1.586.333 6.02v9.211c0 4.435 4.801 7.207 8.642 4.99l7.978-4.606c3.84-2.217 3.84-7.761 0-9.979L8.975 1.031Z" fill="currentColor"></path></svg>
+              </div>
+            </a>
+            </div>
+          <div
+              class="card pb-2 min-w-[20rem] relative rounded-2xl duration-300 shadow-lg hover:shadow-2xl tranform transition-all hover:-translate-y-2"
+            ><a href="#">
+              <img
+                src="./IMG/3.jpg"
+                alt="Cover"
+                class="w-80 h-80 mt-8 rounded-2xl"
+              />
+              <div class="mt-5 flex flex-row justify-between items-center">
+                <div>
+                <h4><b class="text-3xl uppercase">John Doe</b></h4>
+                <p>Architect & Engineer</p>
+              </div>
+                <svg width="15" height="15" fill="" class="bg-[#f53b00] mr-4 p-8 rounded-full" xmlns="http://www.w3.org/2000/svg" cursor="pointer" style="transform: scale(0.75);"><path d="M8.975 1.03C5.135-1.186.333 1.586.333 6.02v9.211c0 4.435 4.801 7.207 8.642 4.99l7.978-4.606c3.84-2.217 3.84-7.761 0-9.979L8.975 1.031Z" fill="currentColor"></path></svg>
+              </div>
+            </a>
+            </div>
+          <div
+              class="card pb-2 min-w-[20rem] relative rounded-2xl duration-300 shadow-lg hover:shadow-2xl tranform transition-all hover:-translate-y-2"
+            ><a href="#">
+              <img
+                src="./IMG/3.jpg"
+                alt="Cover"
+                class="w-80 h-80 mt-8 rounded-2xl"
+              />
+              <div class="mt-5 flex flex-row justify-between items-center">
+                <div>
+                <h4><b class="text-3xl uppercase">John Doe</b></h4>
+                <p>Architect & Engineer</p>
+              </div>
+                <svg width="15" height="15" fill="" class="bg-[#f53b00] mr-4 p-8 rounded-full" xmlns="http://www.w3.org/2000/svg" cursor="pointer" style="transform: scale(0.75);"><path d="M8.975 1.03C5.135-1.186.333 1.586.333 6.02v9.211c0 4.435 4.801 7.207 8.642 4.99l7.978-4.606c3.84-2.217 3.84-7.761 0-9.979L8.975 1.031Z" fill="currentColor"></path></svg>
+              </div>
+            </a>
+            </div>
+          <div
+              class="card pb-2 min-w-[20rem] relative rounded-2xl duration-300 shadow-lg hover:shadow-2xl tranform transition-all hover:-translate-y-2"
+            ><a href="#">
+              <img
+                src="./IMG/3.jpg"
+                alt="Cover"
+                class="w-80 h-80 mt-8 rounded-2xl"
+              />
+              <div class="mt-5 flex flex-row justify-between items-center">
+                <div>
+                <h4><b class="text-3xl uppercase">John Doe</b></h4>
+                <p>Architect & Engineer</p>
+              </div>
+                <svg width="15" height="15" fill="" class="bg-[#f53b00] mr-4 p-8 rounded-full" xmlns="http://www.w3.org/2000/svg" cursor="pointer" style="transform: scale(0.75);"><path d="M8.975 1.03C5.135-1.186.333 1.586.333 6.02v9.211c0 4.435 4.801 7.207 8.642 4.99l7.978-4.606c3.84-2.217 3.84-7.761 0-9.979L8.975 1.031Z" fill="currentColor"></path></svg>
+              </div>
+            </a>
+            </div>
+            
+            <div
+              class="card min-w-[20rem] rounded-2xl duration-300 shadow-lg hover:shadow-2xl tranform transition-all hover:-translate-y-2"
+            >
+              <img
+                src="https://source.unsplash.com/featured/150x150"
+                alt="Cover"
+                class="w-80 h-80 mt-8 rounded-2xl"
               />
               <div class="mt-5">
                 <h4><b class="text-3xl uppercase">John Doe</b></h4>
                 <p>Architect & Engineer</p>
-                <svg width="15" height="15" fill="" class="bg-[#f53b00] mr-4 p-8 rounded-full" xmlns="http://www.w3.org/2000/svg" cursor="pointer" style="transform: scale(0.75);"><path d="M8.975 1.03C5.135-1.186.333 1.586.333 6.02v9.211c0 4.435 4.801 7.207 8.642 4.99l7.978-4.606c3.84-2.217 3.84-7.761 0-9.979L8.975 1.031Z" fill="currentColor"></path></svg>
               </div>
-            </a>
-            </div> -->
+            </div>
           </div>
         </section>
 
-        <section
-          class="py-10 px-12 md:grid grid-flow-col grid-cols-3 sm:block gap-x-10"
-        >
-          <div class="col-span-2 md:mr-[4rem]">
-            <div class="text-left text-3xl text font-extrabold">Top songs <span class="text-xl ml-16 font-normal underline cursor-pointer">Today</span><span class="text-lg ml-16 font-normal cursor-pointer">Week</span><span class="text-lg ml-16 font-normal cursor-pointer">Month</span></div>
-            <div class="p-5 text-xl mt-4">
-              <ul id="track_container">
-                <!--
-                <li
-                  class="bg-[#09090941] mb-5 py-5 px-10 flex justify-start items-center"
-                >
-                  <img src="./IMG/3.jpg" alt="" class="h-24 w-24 mr-12" />
-                  <div>
-                    <h4 class="mb-5 text-2xl">Song title</h4>
-                    <p>artist</p>
-                  </div>
-                  <span class="ml-80 cursor-pointer">3:14</span>
-                  <span class="ml-28 cursor-pointer">play</span>
-                  <span class="ml-28 cursor-pointer">like</span>
-                </li> -->
-              </ul>
-              <div class="mt-8">
-                <div class="text-left text-3xl text font-extrabold">
-                  Artists <span class="text-lg ml-10 font-normal">Top 10</span>
-                </div>
-                <div
-                  class="artist_container flex justify-start items-start gap-x-8 overflow-x-auto"
-                  id="artist_container"
-                >
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row-start-1">
-            <div class="text-left text-3xl text font-extrabold">
-              Recent playlist
-            </div>
-            <div class="max-w-full p-5 text-xl mt-4">
-              <ul id="playlist_container" class="grid grid-cols-2 gap-4">
-                <!-- <li class="mb-8">
-                  <a href="#" class="relative"
-                    ><img
-                      src="./IMG/3.jpg"
-                      alt=""
-                      class="h-40 w-full rounded-lg"
-                    /><span
-                      class="absolute bottom-1 left-4 font-extrabold text-3xl"
-                      >title goes here</span
-                    ><span class="absolute right-6 bottom-1">Play</span></a
-                  >
-                </li> -->
-              </ul>
-            </div>
+        <section class="py-10 px-12">
+          <div class="text-left text-5xl text font-extrabold">Trending</div>
+          <div class="max-w-full p-5 bg-[#123] text-xl">
+            <ul>
+              <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
           </div>
         </section>
       </div>
     </div>
-    <section
-      class="fixed w-screen flex justify-start items-center bottom-0 left-[24rem] bg-[#000000] h-40 py-10 px-20"
-    >
-      <img src="./IMG/3.jpg" alt="" class="h-24 w-20 mr-20 rounded-full" />
-      <div class="mr-36">
-        <h4 class="mb-5 text-2xl">Song title</h4>
-        <p>artist</p>
-      </div>
-      <div class="mr-20">
-        <button id="backward_btn" class="rounded-full mr-16">
-          <i class="fa fa-step-backward text-4xl" aria-hidden="true"></i>
-        </button>
-        <button id="play_pause_btn" class="rounded-full mr-16">
-          <i class="fa fa-play text-5xl" aria-hidden="true"></i>
-        </button>
-        <button id="forward_btn" class="rounded-full">
-          <i class="fa fa-step-forward text-4xl" aria-hidden="true"></i>
-        </button>
-      </div>
-      <div class="progress_part">
-        <input
-          type="range"
-          min="0"
-          max="100"
-          value="0"
-          id="slider"
-          class="w-[30rem] mb-8"
-          onchange="change_duration()"
-          style="accent-color: #f53b00"
-        />
-        <div class="durations flex justify-between w-full">
-          <p id="current_duration" class="text-white">0:00</p>
-          <p id="total_duration" class="text-white">0:00</p>
-        </div>
-      </div>
-    </section>
     <script>
       function Open() {
         document.querySelector(".side").classList.toggle("left-[-300px]");
